@@ -12,7 +12,7 @@ fetchAdvice = ()=>{
   axios.get('https://api.adviceslip.com/advice')
   .then((response)=>{
     const {advice} = response.data.slip;
-    console.log(advice);
+    this.setState({advice: advice});
   })
   .catch((error)=>{
     console.log(error);
@@ -20,9 +20,17 @@ fetchAdvice = ()=>{
 }
 
   render(){
+    const {advice} = this.state;
   return(
-    <h1>App</h1>
-  );
+    <div className="app">
+      <div className="card">
+      <h1 className="heading">{ advice }</h1>
+      <button className="button" onClick={this.fetchAdvice}>
+        <span>Advice</span>
+      </button>
+      </div>
+    </div>
+     );
  }
 }  
 
