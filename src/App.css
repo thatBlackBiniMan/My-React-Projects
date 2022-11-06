@@ -3,12 +3,13 @@
   padding: 0;
   height: 100vh;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .app{
   height: 100%;
-  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/FB_IMG_1527949044286.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/ian-macharia-7k91OUDYAQ0-unsplash.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -39,6 +40,7 @@
 
 }
 
+
 .button{
   position: relative;
   outline: none;
@@ -50,7 +52,7 @@
   cursor: pointer;
   text-transform: uppercase;
   height: 200px;
-  width: 210px;
+  width: 150px;
   opacity: 1;
   background-color: #ffffff;
   border: 1px solid rgb(22, 76, 167, 0.6);
